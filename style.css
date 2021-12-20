@@ -2,161 +2,220 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: white;
-}
-
-
-/*.header {
-    display: flex;
-    background-color: #1F2937;
-    font-size: 24px;
-    color: #F9FAF8;
-    flex-shrink: 1;
-}*/
-
-.header {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 80px;
-    padding-left: 120px;
-    padding-right: 120px;
-    background-color: #1F2937;
-    font-size: 18px;
-    color: #E5E7EB;
-
-}
-
-.right-links {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    padding-bottom: 90px;
-    padding-top: 15px;
-    gap: 20px;
-}
-
-.logo {
-    padding-bottom: 90px;
-    color: #E5E7EB;
-    font-size: 24px;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-.header2 {
-    width: 450px;
-    align-items: flex-start;
-}
-
-.larger-text {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
-    padding-top: 20px;
-}
-
-button {
-    background-color: #3882F6;
-    padding: 8px 35px;
-    border-radius: 5px;
-    color: white;
-    border: solid white 2px;
-    font-weight: bold;
-}
-
-p {
-    
-}
-
-a {
-    text-decoration: none;
-    color: #E5E7EB;
+    background-color: #ffefde;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    color: black;
+    background-color: #ffefde;
+    padding: 20px 0px 50px 100px;
     align-items: center;
     justify-content: center;
-    gap: 52px;
-    padding-bottom: 120px;
-    text-align: center;
-  }
-  
-  .info {
-    max-width: 200px;
-  }
+}
 
-  .title {
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 35px;
-    padding: 55px;
-  }
+.navbar-logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    transform: scaleX(-1);
+}
 
-  .small-img {
-    width: 150px;
-    height: 150px;
-    border: 5px solid skyblue;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
+.navbar-links {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 100px 0px 0px;  
+}
 
-  .big-image {
-    border: 5px solid skyblue;
-    border-radius: 1px;
-    margin-bottom: 10px;
-    max-width: 80%;
-    height: auto;
-  }
-
-  .quote-container {
-      background-color: #E5E7EB;
-      padding: 120px 280px;
-  }
-
-  .quote {
-      font-size: 30px;
-      font-style: italic;
-      color: #1F2937;
-  }
-
-  .author {
-    text-align: right;
-    color: black;
-    font-weight: bold;
+.navbar-links a {
+    padding: 20px;
+    text-decoration: none;
     font-size: 25px;
-  }
+    color: black;
+    font-weight: bold;
+}
 
-  .last-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #3882F6;
-      margin: 100px 360px;
-      padding: 20px 20px;
-      border-radius: 5px;
-      color: white;
-  }
+.navbar-links a:hover {
+    background-color: #01707580;
+}
 
-  .action {
-      padding-right: 80px;
-      list-style: none;
+/* header */
 
-  }
+.header {
+    display: flex;
+    color: #ffefde;
+    background-color: #017075;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    flex-wrap: wrap;
+    margin: 20px 0px 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-  .bold-text {
-      font-weight: bold;
-  }
+.header-text {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #017075;
+    padding: 50px;
+}
 
-  .footer {
+.header-img img {
+    width: 300px;
+    height: 270px;
+    margin: 20px;
+    margin-left: 20px;
+}
+
+.header-button button {
+    max-width: fit-content;
+    padding: 12px 35px;
+    border: #fff5ea solid 2px;
+    color: #fff5ea;
+    font-weight: bold;
+    margin: 15px;
+    background-color: #017075;
+}
+
+.header-button button:hover {
+    background-color: #F9FAF880;
+}
+
+.header-button a {
+    text-decoration: none;
+    color: #ffefde;
+}
+
+/* content */
+
+.main-content {
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-content-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    background-color: #017075;
+    margin: 80px 0px 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
+
+.main-content-info img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #ffefde;
+    margin: 5px 30px 0px 30px;
+}
+
+.main-content p, h2 {
+    text-align: center;
+}
+
+.main-content p {
+    color: #ffefde;
+}
+
+.main-content h2 {
+    font-size: 55px;
+    color: black;
+    font-weight: bold;
+}
+
+/* quote */
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 80px 350px 0px 350px;
+}
+
+hr {
+    size: 100;
+    color: black;
+    width: 100%;
+}
+
+.quote {
+    font-size: 30px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+  text-align: right;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 120px;
+}
+
+/* sign-up */
+
+.info {
+    background-color: #ff6864;
+    margin: 20px 270px 80px 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info-text {
+    text-align: left;
+}
+
+.info-text p {
+    color: #ffefde;
+    opacity: 0.7;
+    margin: 5px 30px 30px 50px;
+}
+
+h3 {
+    color: #ffefde;
+    font-family: 'Roboto', arial;
+    padding: 0;
+    margin: 30px 0px 0px 50px;
+}
+
+.info-button button {
+    
+    padding: 12px 35px;
+    border: #ffefde solid 2px;
+    color: #ffefde;
+    font-weight: bold;
+    margin: 15px;
+    background-color: #ff6864;
+}
+
+.info-button button:hover {
+    background-color: #F9FAF880;
+}
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #1F2937;
-    font-size: 18px;
-    color: #E5E7EB;
-    padding: 30px;
-  }
+    color: #ffefde;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #017075;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

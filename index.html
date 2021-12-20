@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Document</title>
 </head>
-<body>   
-<div class="header">     
-    <div class="header2"><div class="logo">Header Logo</div>
-        <div class="larger-text">This website is awesome</div>
-        <p>This website has some subtext that goes here under the main title. It's a smaller dont and the color is lower contrast</p>
-        <button type="button">Sign up</button> 
-    </div>
-    <div class="header3">        
-        <div class="right-links">
-            <a href="www.google.com">header link one</a>
-            <a href="www.google.com">header link two</a>   
-            <a href="www.google.com">header link three</a>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="./img/icon-sheep.png" alt="sheep">
+            </div>
+            <div class="navbar-links">
+                <a href="#pictures">#pictures</a>
+                <a href="#quote">#quotes</a>
+                <a href="#more">#more</a> 
+            </div>
         </div>
-        <img class="big-image" src="./img/laptop.png" alt="bakery">        
 
-    </div> 
-</div>
+        <div class="header">
+            <div class="header-text">
+                <h1>Sheep (Ovis aries)</h1>
+                <p>are members of the order Artiodactyla, the even-toed ungulates. Although the name sheep applies to many species in the genus Ovis, in everyday usage it almost always refers to Ovis aries.</p>
+                <div class="header-button">
+                    <a href="#pictures"><button class="button1" type="button">SUPRISE ME</button></a>
+                    <a href="#quote"><button class="button2" type="button">OR CLICK ME</button></a>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="./img/sheep.png" alt="sheep">
+            </div>
+        </div>
 
-<div class="title">Some random information...</div>
+        <div class="main-content">
+            <h2><a name="pictures">Some sheep..</a></h2>
+            <div class="main-content-info">
+                <div>
+                    <img src="./img/curious-sheep.jpg">
+                    <p>"you talkin to me?"</p>
+                </div>
+                <div>
+                    <img src="./img/daring-sheep.jpg">
+                    <p>follow your dreams</p>
+                </div>
+                <div>
+                    <img src="./img/fake-sheep.jpg">
+                    <p>fake it till you make it</p>
+                </div>
+                <div>
+                    <img src="./img/horn-sheep.jpg">
+                    <p>big horns</p>
+                </div>
+                <div>
+                    <img src="./img/stoned-sheep.jpg">
+                    <p>Stoned.</p>
+                </div>
+            </div>
+        </div>
 
-  <div class="container">
-    <div class="info">
-      <img class="small-img" src="./img/small.jpg" alt="barberry">
-      <div class="text">This is a type of plant. We love this one.</div>
+        <div class="quote-container"><a name="quote"></a>
+            <div class="quote"><q>A sheep doesn't concern itself with the opinion of lions.</q></div>
+            <div class="author">- George R. R. Martin<hr></div>
+            <div class="quote"><q>I am not afraid of an army of sheep led by a lion; I am afraid of an army of lion led by a sheep.</q></div>
+            <div class="author">- Alexander the Great<hr></div>
+            <div class="quote"><q>Without sheep, the world would not be what it is today.</q></div>
+            <div class="author">- unknown<hr></div>
+        </div>
+
+        <div class="info">
+            <div class="info-text"><a name="more"></a>
+                <h3>Do you want to know more?</h3>
+                <p>Well, you can go to wikipedia, because this is the end of the site..</p>
+            </div>
+            <div class="info-button"><a href="https://en.wikipedia.org/wiki/Sheep">
+                <button type="button">click</button></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">Made by Golan for TOP Landing Page Project</div>
+      </div>
     </div>
-    <div class="info">
-      <img class="small-img" src="./img/small2.jpg" alt="chili">
-      <div class="text">This is another type of plant. Isn't it nice</div>
-    </div>
-    <div class="info">
-      <img class="small-img" src="./img/small3.jpg" alt="pepper">
-      <div class="text">We have so many plants. Yay plants.</div>
-    </div>
-    <div class="info">
-      <img class="small-img" src="./img/small4.jpg" alt="saffron">
-      <div class="text">I'm running out of things to say about plants.</div>
-    </div>
-  </div>
-
-  <div class="quote-container">
-      <div class="quote">
-        “There is neither happiness nor misery in the world; there is only the comparison of one state with another, nothing more. He who has felt the deepest grief is best able to experience supreme happiness.”</div>
-        <div class="author">- Alexandre Dumas</div>
-  </div>
-
-  <div class="last-container">
-      <ul class="action">
-          <li class="bold-text">Call to action! It's time!</li>
-          <li>Sign up for our product by clicking that button right over there!</li>
-      </ul>
-      <button type="button">Sign up</button>
-  </div>
-
-  <div class="footer">
-      <div class="footer-text">Copyright © Golan 2021</div>
-  </div>
-            
 </body>
 </html>
